@@ -1,0 +1,10 @@
+name: hotel-server
+
+services:
+  db:
+    image: mcr.microsoft.com/mssql/server:2022-latest
+    environment:
+      - ACCEPT_EULA=Y
+      - MSSQL_SA_PASSWORD=Haquanq@12345
+    ports:
+      - 6789:1433
